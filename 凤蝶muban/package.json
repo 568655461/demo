@@ -1,0 +1,87 @@
+{
+  "description": "请修改此描述",
+  "author": "wb-zhaowei.l",
+  "keywords": [
+    "fengdie-templates"
+  ],
+  "homepage": "http://gitlab.alipay-inc.com/fengdie-activity/publicity",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alipay-inc.com:fengdie-activity/publicity.git"
+  },
+  "license": "ISC",
+  "name": "publicity",
+  "version": "1.0.4",
+  "fengdie": {
+    "title": "摩根产品宣传页",
+    "type": "template",
+    "reload": false,
+    "controllers": [],
+    "rules": {},
+    "targetPath": "fengdie",
+    "schemaList": [
+      {
+        "title": "底部banner",
+        "path": "schemas/banner",
+        "preview_url": "",
+        "data": "{\n  \"img\":\"https://os.alipayobjects.com/rmsportal/AroeMYcnrHCGuzZ.png\",\n  \"link\":\"afwealth://platformapi/startapp?appid=fund&action=fund_theme&themeid=345293c1e3184f4ea4831b454cef89e0\"\n}"
+      },
+      {
+        "title": "悬浮按钮",
+        "path": "schemas/fixedBox",
+        "preview_url": "",
+        "data": "{\n  \"btn\":\"立即定投\",\n  \"link\":\"afwealth://platformapi/startapp?appid=fund&action=fund_detail&fundcode=968000&productid=20160414000230030000000000008200&&fundtype=QDII\"\n}"
+      },
+      {
+        "title": "底部",
+        "path": "schemas/footer",
+        "preview_url": "",
+        "data": "{\r\n  \"h2\":\"基金销售服务由杭州数米基金销售有限公司提供\",\r\n  \"h3\":\"本页面相关材料由摩根基金（亚洲）有限公司提供\",\r\n  \"p\":\"投资涉及风险。投资前请参阅销售文件所载详情，包括风险因素。投资价值及收益可出现波动，投资者的投资并无保证，过去的业绩并不预示未来表现。汇率波动可导致有关海外投资的价值升跌。新兴市场投资的波动程度或会较其他市场更高，并通常对价格变动较敏感，而投资者的资本损失风险也因此而较大。本文件所述基金为内地与香港基金互认中获得中国证监会正式注册的香港基金，在内地市场向公众销售。该基金依照香港法律设立，其投资运作、信息披露等规范适用香港法律及香港证监会的相关规定。摩根基金（亚洲）有限公司是本文件所载的基金的基金管理人。上投摩根基金管理有限公司作为本文件所述基金在中国内地发售的主销售商及代理人商刊发本文件。本文件并未由中国证券监督管理委员会或香港证券及期货事务监察委员会审阅。\"\r\n}"
+      },
+      {
+        "title": "头部大图",
+        "path": "schemas/header",
+        "preview_url": "",
+        "data": "{\n  \"img\":\"https://os.alipayobjects.com/rmsportal/sdEhxHGEHLQChmn.png\"\n}"
+      },
+      {
+        "title": "列表",
+        "path": "schemas/importantList",
+        "preview_url": "",
+        "data": "{\n  \"tit\":\"重要事项\",\n  \"list\":[\n    {\n      \"text\":\"本基金主要投资于亚洲债劵及其他债务证劵。本基金将有限度投资于以人民币计价的投资项目。\"\n    },\n    {\n      \"text\":\"本基金须承受可能影响债券价格之利率风险、信贷、新兴市场、货币、流通性风险、与中国内地与香港基金互认有关的特别风险因素，以及货币对冲类别的对冲及类别货币相关风险。低于投资级别或未获评级债务证券之投资，可能须承受相比投资级别债券较高之流通性风险及信贷风险，并增加投资损失之风险。人民币对冲类别的人民币货币及货币对冲类别风险。人民币现时不可自由兑换。将境外人民币（CNH）兑换为境内人民币（CNY）是一项货币管理程序，须遵守由中国政府实施的外汇管制政策及限制。概无保证人民币不会在某个时间贬值。在极端市况下市场未能提供足够人民币作兑换时及获受托人批准后，管理人可以美元支付赎回所得款项及╱或分派。\"\n    },\n    {\n      \"text\":\"当基金所得之收入并不足够支付基金宣布之分派时，管理人有权可酌情决定该分派可能由本金拨款支付。投资者应注意，从本金拨款支付分派即代表从投资者原先投资基金之款额或该项原先投资应占的任何本金增值退回或提取部分金额。基金作出任何分派均可能导致每份额资产净值实时下跌。\"\n    },\n    {\n      \"text\":\"内地投资者买卖本香港互认基金取得的转让所得，个人投资者自2015年12月18日起至2018年12月17日止，三年内暂免征收个人所得税，企业投资者依法征收企业所得税。内地投资者从本香港互认基金分派取得的收益，个人投资者由本香港互认基金在内地的代理人按照20%的税率代扣代缴个人所得税，企业投资者依法征收企业所得税。由于中国内地与香港对基金投资者的税收政策存在差异，可能导致香港互认基金在内地销售的份额资产回报有别于在香港销售的相关份额。同时，中国内地关于在内地销售的香港互认基金与内地普通公募基金的税收政策也存在差异。综上，特别提醒投资者关注因税收政策差异而对基金资产回报可能产生的影响。内地投资者如需了解其投资于香港互认基金的中国税收政策，请查阅财税[2015]125号《关于内地与香港基金互认有关税收政策的通知》。\"\n    },\n    {\n      \"text\":\"投资者可能须承受重大损失。\"\n    },\n    {\n      \"text\":\"投资者不应单凭本文件作出投资决定。\"\n    }\n  ]\n}"
+      },
+      {
+        "title": "第二屏",
+        "path": "schemas/screenFour",
+        "preview_url": "",
+        "data": "{\n  \"tit\":\"如何买这只基金？定投！\",\n  \"img\":\"https://os.alipayobjects.com/rmsportal/raLobnxYVUcpFYs.png\",\n  \"logo\":\"https://os.alipayobjects.com/rmsportal/nfqHQuaQjodBZGW.png\",\n  \"p\":\"优质产品，第三方互联网平台首发。内地销售规模有限，仅可定投购买，单笔限额三万。\"\n}"
+      },
+      {
+        "title": "第三屏",
+        "path": "schemas/screenThree",
+        "preview_url": "",
+        "data": "{\n  \"tit\":\"基金表现\",\n  \"img\":\"https://os.alipayobjects.com/rmsportal/fbRUbvkZCWfUraf.png\",\n  \"list\":[\n    {\n      \"p\":\"<p>^资料来源：摩根资产管理（美元（每月派息）类别回报，由成立日2005.01.18至2016.02.29，以美元资产净值计，红利再投资。）基金/类别以美元报价，以人民币为本的投资者可能承受汇率波动影响。<span class='color'>以上所示的份额并未获得中国证券监督管理委员会认可，并不会向中国大陆的公众人士发售。以上资料仅供参考。</span></p>\"\n    },\n    {\n      \"p\": \"<p>#自基金成立至2005年底。</p>\"\n    },\n    {\n      \"p\":\"<p>【（每月派息）类别】旨在每月进行分派。分派率并不保证，本基金的分派来源可能为本金。<i>详见重要事项3</i></p><p>特别提醒投资者关注因税收政策差异而对资金回报可能产生的影响。<i>详见重要事项4</i></p>\"\n    }\n  ],\n  \"p\":\"您在本平台可购买此基金的PRC人民币对冲份额（累计）：968000，详情可点击“<i>立即定投</i>”了解。\"\n}"
+      },
+      {
+        "title": "第二屏",
+        "path": "schemas/screenTwo",
+        "preview_url": "",
+        "data": "{\n  \"tit\":\"三大理由选定摩根亚债基金\",\n  \"img\":\"https://os.alipayobjects.com/rmsportal/MxoVFOOokmMPUtk.png\",\n  \"p1\":\"^数据来源：摩根资产管理\",\n  \"p2\":\"数据截止至：2016.02.29\",\n  \"p3\":\"#资料来源：资料来源：晨星（香港），香港证监会认可亚洲债券基金组别（截至2016.02.29，美元（每月派息）类别回报，以美元资产净值计，红利再投资。）。<span class='color'>以上所示的份额并未获得中国证券监督管理委员会认可，并不会向中国大陆的公众人士发售。以上资料仅供参考。</span>境外机构的基金评价方法及结果区别于内地评价机构采用的方法和所得结果。\",\n  \"p4\":\"*截至2016.03.31摩根大通集团旗下资产管理客户资金总值\"\n}"
+      },
+      {
+        "title": "下载条",
+        "path": "schemas/smartBanner",
+        "preview_url": "",
+        "data": "{\n  \"p1\":\"蚂蚁聚宝\",\n  \"p2\":\"买基金&nbsp;费率1折起\",\n  \"p3\":\"查看\",\n  \"link\":\"afwealth://platformapi/startapp?appid=h5&action=page&url=https%3A%2F%2Fds.alipay.com%2Ffd-injzas7i%2Fpublicity.html%3F__webview_options__%3DshowOptionMenu%253DNO\"\n}"
+      }
+    ]
+  },
+  "title": "摩根产品宣传页",
+  "entry": {
+    "assets/aplus": "./assets/aplus.js",
+    "assets/fastclick.min": "./assets/fastclick.min.js",
+    "assets/index": "./assets/index.js",
+    "assets/lazyload": "./assets/lazyload.js",
+    "assets/smart-banner": "./assets/smart-banner.js"
+  }
+}

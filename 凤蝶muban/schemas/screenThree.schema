@@ -1,0 +1,8 @@
+Object(第三屏) {
+  tit(标题),
+  img(图片):Image,
+  list(列表):Array{
+    p(内容):RichText
+  },
+  p(底部内容):RichText
+}

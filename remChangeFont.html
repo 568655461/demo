@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">-->
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  /**
+   * Created by senlyn on 2016/6/15.
+   */
+  ;(function(doc, win) {
+    var docEle = doc.documentElement,
+      event = "onorientationchange" in window ? "orientationchange" : "resize",
+      fn = function() {
+        var width = docEle.clientWidth;
+        width && (docEle.style.fontSize = 10 * (width / 320) + "px");
+      };
+    win.addEventListener(event, fn, false);
+    doc.addEventListener("DOMContentLoaded", fn, false);
+  }(document, window));
+</script>
+</html>

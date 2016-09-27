@@ -1,0 +1,7 @@
+Object(第二屏) {
+  tit(标题),
+  img(图片):Image,
+  logo(logo图):Image,
+  p(内容),
+  link(跳转链接)
+}

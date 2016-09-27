@@ -1,0 +1,6 @@
+Object(列表) {
+  tit(标题),
+  list(列表):Array{
+    text(内容)
+  }
+}

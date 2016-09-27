@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">-->
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<body>
+<textarea id="hobbiesInput">1,3,4,5,3,4,3,2,1</textarea>
+
+<script>
+  function getUserHobbies(){
+    var userIput = document.getElementById("hobbiesInput").value;
+    userIput = userIput.replace(/[.,.、\s]+/g,",");
+    userIput = userIput.split(',');
+    var len = userIput.length;
+    var obj = {};
+    while(len--){
+      if(userIput[len]!=''){
+        obj[userIput[len]]=true;
+      }
+      console.log(len)
+    }
+    var hobbiesArray = [];
+    for(var key in obj){
+      hobbiesArray.push(key)
+    }
+    return hobbiesArray;
+  }
+  var a = getUserHobbies();
+  console.log(a)
+</script>
+</html>

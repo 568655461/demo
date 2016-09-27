@@ -1,0 +1,21 @@
+@width_div : 90px;
+@width_sprite : 200px;
+@width_base : 640px;
+@height_div : 80px;
+@height_sprite : 700px;
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  margin: 0 auto;
+}
+#demo{
+  width: 100%*(@width_div/@width_base);/*计算背景放置位置占屏幕宽度的百分比*/
+  height: 1rem*80/40;
+  background: #eee url("sprite3.png") -100px -200px no-repeat;
+  background-size: (100% * @width_sprite/@width_div) auto;/*让背景图的大小，跟随页面宽度而变*/
+  background-position: (100% * (-100px)/(@width_div - @width_sprite)) (100% * (-200px)/(@height_div - @height_sprite));/*计算需要icon在背景图中位置，遵循减法原则。*/
+}

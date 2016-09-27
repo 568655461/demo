@@ -1,0 +1,4 @@
+Object(底部banner) {
+   img(头部大图):Image,
+   link(跳转)
+}

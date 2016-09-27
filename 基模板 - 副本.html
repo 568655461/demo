@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">-->
+    <title></title>
+    <style>
+        /*.box{
+          width: 500px;
+          height: 500px;
+          background: grey;
+          display: -moz-box;
+          display: -webkit-box;
+          display: box;
+
+          -moz-box-pack:center;
+          -webkit-box-pack:center;
+          -moz-box-align:center;
+          -webkit-box-align:center;
+        }
+      .child{
+
+      }*/
+      .box1{
+        width: 500px;
+        height: 500px;
+        background: grey;
+        position: relative;
+      }
+        .box2{
+          width: 300px;
+          height: 300px;
+          background:red;
+          position: absolute;
+        }
+        .box3{
+          width: 200px;
+          height: 200px;
+          background: green;
+          position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+  <div class="box2">
+    <div class="box3"></div>
+  </div>
+</div>
+</body>
+<script>
+  /*function T() {
+    this.id = "Object";
+    this.dom = document.getElementById("scroll");
+  }
+  T.prototype = {
+    init: function() {
+      //①
+      this.dom.onmouseover = function() {
+        console.log("Over-->"+this.id);
+      }
+      //②
+      this.dom.onmouseout = function() {
+        console.log("Out -->"+this.id);
+      } .bind(this)
+    }
+  };
+  (new T()).init();
+  console.log(new T().prototype)*/
+  /*function printName(name){
+    var b = arguments[0];
+    var a = b+"是最棒的";
+    console.log(a)
+  }
+  printName(李四)*/
+  function changeText(){
+    var a = document.getElementById("scroll");
+    a.innerHTML="你是最棒的"
+  }
+  changeText()
+</script>
+
+</html>

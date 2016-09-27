@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+#demo {
+  width: 14.0625%;
+  /*计算背景放置位置占屏幕宽度的百分比*/
+  height: 2rem;
+  background: #eee url("sprite3.png") -100px -200px no-repeat;
+  background-size: 222.22222222% auto;
+  /*让背景图的大小，跟随页面宽度而变*/
+  background-position: 90.90909091% 32.25806452%;
+  /*计算需要icon在背景图中位置，遵循减法原则。*/
+}

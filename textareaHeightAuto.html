@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="jquery-1.8.3.min.js"></script>
+    <style>
+      body,article,h6,textarea,p{
+        margin: 0;
+        padding: 0;
+        font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+      }
+      h6{
+        font-weight: normal;
+      }
+      .answer{
+        margin-top: 20px;
+        width: 850px;
+      }
+      .answer-title{
+        font-size: 12px;
+        color: #666;
+      }
+      .answer-box{
+        position: relative;
+      }
+      .triangle{
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 17px;
+        left: 10px;
+        border-style: solid;
+        border-width: 0 12px 12px 11px;
+        border-color: transparent transparent #dedfdf transparent;
+        z-index: 999;
+      }
+      .triangle::before {
+        position: absolute;
+        content: '';
+        top: 2px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 11px 11px 10.5px;
+        border-color: transparent transparent #f9fafb transparent;
+      }
+      .answer-text{
+        margin-top: 28px;
+        width: 850px;
+        min-height: 100px;
+        outline:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        padding: 16px 14px;
+        background: #f9fafb;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        border: 1px solid #dedfdf;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        overflow: hidden;
+        resize: none;
+      }
+      .answer-text:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .answer-time{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #d3d3d3;
+      }
+    </style>
+</head>
+<body>
+<article class="answer">
+  <h6 class="answer-title">我听说高血压可以控制的啊？不知道是要怎么做的？治疗和饮食有什么需要注意的呢？</h6>
+  <div class="answer-box">
+    <div class="triangle"></div>
+    <textarea autoHeight="true" name="answer-area" id="" class="answer-text" placeholder="请输入你的回答..." ></textarea>
+  </div>
+</article>
+</body>
+<script>
+  $.fn.autoHeight = function(){
+    function autoHeight(elem){
+      elem.style.height = 'auto';
+      elem.scrollTop = 0; //防抖动
+      elem.style.height = elem.scrollHeight + 'px';
+    }
+    this.each(function(){
+      autoHeight(this);
+      $(this).on('keyup', function(){
+        autoHeight(this);
+      });
+    });
+  }
+  $('textarea[autoHeight]').autoHeight();
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">-->
+    <title></title>
+    <style>
+        #demo{
+            width: 500px;
+            margin:  0  auto;
+            overflow: hidden;
+        }
+        #demo ul{
+            overflow: hidden;
+            clear: both;
+        }
+        #demo ul li{
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            background: #40beff;
+            margin-left: 40px;
+        }
+        .content div{
+            width: 100%;
+            height: 300px;
+            background: #b9d8c8;
+            display: none;
+        }
+        .selectLi{
+            background: #6b62ff!important;
+        }
+        .selectDiv{
+            display: block!important;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <ul>
+            <li class="selectLi">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div class="content">
+            <div class="selectDiv">1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+</body>
+<script>
+    var query = {
+      getQueryStringAgrs:function(){
+        var qs = (location.search.length>0?location.search.substring(1):"");
+        agrs = {};
+        items = qs.length?qs.split("&"):[];
+        item = null;
+        name = null;
+        value = null;
+        i = 0;
+        len = items.length;
+        for(i = 0;i<len;i++){
+          item = items[i].split("=");
+          name = decodeURIComponent(item[0]);
+          value = decodeURIComponent(item[1]);
+          if(name.length){
+            agrs[name] = value;
+          }
+        }
+        return agrs;
+      }
+    };
+  var result = query.getQueryStringAgrs("?q=javascript&num=0")
+  alert(result["q"]);
+</script>
+</html>

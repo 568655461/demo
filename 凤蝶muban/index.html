@@ -1,0 +1,98 @@
+{% extends "common/layout.html" %}
+{% block body %}
+{% require 'assets/index.css' %}
+{% use 'schemas/header' as header %}
+<header>
+  <img src="{{header.img}}" alt="" width="100%" height="auto"/>
+</header>
+{% enduse %}
+{% use 'schemas/importantList' as important %}
+<div class="content-important bor-more">
+  <div class="content-tit"><span>{{important.tit}}</span></div>
+  <div class="content-list">
+    <ul>
+      {% for important in important.list %}
+      <li>{{important.text}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% enduse %}
+<div class="hr-10 bor"></div>
+{% use 'schemas/screenTwo' as two %}
+<section class="screen-two common-text">
+  <h2>{{two.tit}}</h2>
+  <img data-lazyload="{{two.img}}" alt="" width="100%" height="auto"/>
+  <div class="content-text">
+    <p class="text-tit"><span>{{two.p1}}</span><span>{{two.p2}}</span></p>
+    <p>{{two.p3}}</p>
+    <p>{{two.p4}}</p>
+  </div>
+</section>
+{% enduse %}
+<div class="hr-10 bor"></div>
+{% use 'schemas/screenThree' as three %}
+<section class="screen-three common-text">
+  <h2>{{three.tit}}</h2>
+  <img data-lazyload="{{three.img}}" alt="" width="100%" height="auto"/>
+  <div class="three-box">
+    <ul class="three-list">
+      {% for item in three.list %}
+
+      <li>{{item.p}}</li>
+      {% endfor %}
+    </ul>
+    <p>{{three.p}}</p>
+  </div>
+</section>
+{% enduse %}
+<div class="hr-10 bor"></div>
+{% use 'schemas/screenFour' as four %}
+<section class="screen-four common-text">
+  <h2>{{four.tit}}</h2>
+  <img data-lazyload="{{four.img}}" alt="" width="100%" height="auto"/>
+  <div class="four-box">
+    <div class="four-text bor">
+      <p>{{four.p}}</p>
+      <a class="four-btn" href="javascript:;" data-link="{{four.link}}"><img data-lazyload="{{four.logo}}" alt="" width="80" height="50"/></a>
+    </div>
+  </div>
+</section>
+{% enduse %}
+{% use 'schemas/banner' as banner %}
+<div class="show">
+  <div class="hr-10 bor"></div>
+  <div class="banner">
+    <a href="javascript:;" data-link="{{banner.link}}"><img data-lazyload="{{banner.img}}" alt="" width="100%" height="auto"/></a>
+  </div>
+</div>
+{% enduse %}
+{% use 'schemas/footer' as footer %}
+<footer>
+  <h2>{{footer.h2}}</h2>
+  <h3>{{footer.h3}}</h3>
+  <p>{{footer.p}}</p>
+</footer>
+{% enduse %}
+{% use 'schemas/fixedBox' as fixed %}
+<div class="fixed-box" style="display: none;">
+  <a href="javascript:;" data-link="{{fixed.link}}">{{fixed.btn}}</a>
+</div>
+{% enduse %}
+{% use 'schemas/smartBanner' as banner %}
+<div class="smartBanner" data-link="{{banner.link}}" id="J_SmartBanner" style="display: none;">
+  <div class="antPic"></div>
+  <dl class="ctn">
+    <dt>{{banner.p1}}</dt>
+    <dd>{{banner.p2}}</dd>
+  </dl>
+  <div class="btn" id="J_DownloadBtn">{{banner.p3}}</div>
+  <div class="btnLayer" id="J_downloader"></div>
+</div>
+{% enduse %}
+{% require "assets/fastclick.min.js" %}
+{% require "assets/lazyload.js" %}
+{% require "assets/smart-banner.js" %}
+{% require "assets/aplus.js" %}
+{% require "assets/index.js" %}
+{% endblock %}

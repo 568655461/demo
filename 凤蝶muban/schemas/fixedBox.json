@@ -1,0 +1,4 @@
+{
+  "btn":"立即定投",
+  "link":"afwealth://platformapi/startapp?appid=fund&action=fund_detail&fundcode=968000&productid=20160414000230030000000000008200&&fundtype=QDII"
+}
